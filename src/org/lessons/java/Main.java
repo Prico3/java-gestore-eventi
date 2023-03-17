@@ -99,7 +99,7 @@ public class Main {
         //MILESTONE 3
         Concerto concerto1 = null;
         try {
-            concerto1 = new Concerto("Campovolo", LocalDate.parse("2023-10-12"), 20, LocalTime.parse("09:00"), BigDecimal.valueOf(10.5780));
+            concerto1 = new Concerto("Drake", LocalDate.parse("2023-10-12"), 10000, LocalTime.parse("09:00"), BigDecimal.valueOf(100.50));
             System.out.println(concerto1.toString());
         } catch (Exception e) {
             System.out.println("Non è possibile inserire l'evento! " + e.getMessage());
