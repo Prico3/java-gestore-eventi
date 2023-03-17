@@ -65,7 +65,7 @@ public class Main {
         }
 		
 		/*
-			* 4. Chiedere all’utente se e quanti posti vuole disdire
+			4. Chiedere all’utente se e quanti posti vuole disdire
 			5. Provare ad effettuare le disdette, implementando opportuni controlli e gestendo
 			eventuali eccezioni
 		 */
@@ -94,6 +94,16 @@ public class Main {
             } else {
                 System.out.println("Nessuna disdetta richiesta! Arrivederci!");
             }
+        }
+
+        //MILESTONE 3
+        Concerto concerto1 = null;
+        try {
+            concerto1 = new Concerto("Campovolo", LocalDate.parse("2023-10-12"), 20, LocalTime.parse("09:00"), BigDecimal.valueOf(10.5780));
+            System.out.println(concerto1.toString());
+        } catch (Exception e) {
+            System.out.println("Non è possibile inserire l'evento! " + e.getMessage());
+            return;
         }
     }
 }
